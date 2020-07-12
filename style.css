@@ -1,0 +1,36 @@
+@font-face {
+    font-family: junicode;
+    src: url(./fonts/Junicode-BoldCondensed.ttf);
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: junicode;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+}
+
+a{ 
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    opacity: 50%;
+}
+
+
+#enter {
+    color: white;
+    display: block;
+    position: relative;
+    left: 50vw;
+    bottom: 55vh;
+
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}

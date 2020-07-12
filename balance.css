@@ -1,0 +1,163 @@
+@font-face {
+    font-family: junicode;
+    src: url(./fonts/Junicode-BoldCondensed.ttf);
+  }
+
+  @font-face {
+    font-family: junicode-regular;
+    src: url(./fonts/Junicode.ttf);
+  }
+
+html {
+      overflow-x: hidden;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0.08em;
+}
+
+.bal-top {
+    margin-top: 8vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    z-index: -1;
+}
+
+.bal-title {
+    height: 20vh;
+    margin: 2%;
+}
+
+.dance-index {
+    bottom: 8vh;
+    right: 10vw;
+    position: absolute;
+    display: flex;
+    justify-content: baseline;
+}
+
+#not-row img {
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+p#subtitle {
+    margin-left: 150px;
+    position: sticky;
+    width: 200px;
+    display: block;
+    font-size: 1.5em;
+    letter-spacing: 0.09em;
+}
+
+p#title {
+    font-size: 8em;
+    display: inline;
+    letter-spacing: 0.08em;
+    font-family: junicode-regular;
+}
+
+p#index-num {
+    width: 70px;
+    font-size: 4em;
+    display: inline;
+    line-height: 50px;
+}
+
+
+p#bal-intro {
+    width: 550px;
+    font-size: 0.9em;
+    display: block;
+    left: 8%;
+    position: absolute;
+    letter-spacing: 0.02em;
+}
+
+a{ 
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    opacity: 50%;
+}
+
+#back-arrow, #back-arrow a  {
+    display: block;
+    position: absolute;
+    left:  30px;
+    top: 10px;
+    width: 200px;
+    height: 10px;
+    color: black;
+
+}
+
+
+.top {
+    width: 100vw;
+    height:100vh;
+    display: block;
+}
+
+.sec-1 {
+    display: block;
+    width: 100vw;
+    height: 200vh;
+    /* border: 10px solid black; */
+}
+
+.visual-1 {
+    left: 8vw;
+    position: absolute;
+    display: block;
+}
+
+.visual-2 {
+    right:0;
+    margin-top: 60vh;
+    position: absolute;
+
+}
+.visual-3 {
+    margin-top: 140vh;
+    left: 10vw;
+    position: absolute;
+}
+
+#bal-img-1 {
+    width: 300px;
+    height: 450px;
+}
+
+#bal-img-2 {
+    width: 550px;
+    height: 760px;
+}
+
+#bal-img-3 {
+    width: 360px;
+    height: 450px;
+}
+
+.bal-text-break {
+    display: block;
+    width: 100vw;
+    height: 30vh;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: junicode-regular;
+    display:flex;
+    padding: 5%;
+    justify-content: center;
+    letter-spacing: none;
+}
