@@ -7,10 +7,18 @@
       <link rel="stylesheet" type="text/css" href="balance.css">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js"></script>
       <!-- <script type="text/javascript" src="js/main.js"></script> -->
+            <!-- animsition.css -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css">
+     <!-- jQuery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+     <!-- animsition.js -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
 
   </head><!-- end of head-->
 
  <body>
+
+    <div class="animsition">
 
     <section class="top">
     <div id="back-arrow">
@@ -51,6 +59,49 @@
     <h2> we begin and end in balance </h2>
 </div>
 
+
+<div class="sec-2">
+    <div class="center-img">
+    <img src="./imgs/balance_4.png" id="bal-img-4"></img>
+    </div>
+</div>
+
+<div class="sec-3">
+    <div class="stacked-horizontal">
+        <div class="visual-4"><img src="./imgs/balance_5.png" id="bal-img-5"></img></div>
+        <div class="visual-5"><img src="./imgs/balance_6.png" id="bal-img-6"></img></div>
+        <div class="visual-6"><img src="./imgs/balance_7.png" id="bal-img-7"></img></div>
+    </div>
+</div>
+
 </body> <!-- END BODY -->
+</div>
+
+          <script>
+            $(document).ready(function() {
+            $(".animsition").animsition({
+              inClass: 'fade-in',
+              outClass: 'fade-out',
+              inDuration: 1500,
+              outDuration: 800,
+              linkElement: '.animsition-link',
+              // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+              loading: true,
+              loadingParentElement: 'body', //animsition wrapper element
+              loadingClass: 'animsition-loading',
+              loadingInner: '', // e.g '<img src="loading.svg" />'
+              timeout: false,
+              timeoutCountdown: 5000,
+              onLoadEvent: true,
+              browser: [ 'animation-duration', '-webkit-animation-duration'],
+              // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+              // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+              overlay : false,
+              overlayClass : 'animsition-overlay-slide',
+              overlayParentElement : 'body',
+              transition: function(url){ window.location.href = url; }
+            });
+          });
+          </script>
 
 </html>

@@ -10,7 +10,9 @@
 
 html {
       overflow-x: hidden;
+      scroll-behavior: smooth;
   }
+  
 
 *{
     padding: 0;
@@ -160,4 +162,69 @@ h2 {
     padding: 5%;
     justify-content: center;
     letter-spacing: none;
+}
+
+
+.sec-2 {
+    width: 100vw;
+    height: 120vh;
+    display: block;
+}
+
+.center-img {
+    display: block;
+    left: 35%;
+    position: absolute;
+}
+
+#bal-img-4 {
+    width: 500px;
+    height: 700px;
+}
+
+#bal-img-5 {
+    width: 350px;
+    height: 450px;
+}
+#bal-img-6 {
+    width: 350px;
+    height: 450px;
+}
+#bal-img-7 {
+    width: 350px;
+    height: 450px;
+}
+
+.sec-3 {
+    width: 100vw;
+    height: 80vh;
+    left:0;
+    display: block;
+}
+
+.stacked-horizontal {
+    display: block;
+    position: absolute;
+    left: 18vw;
+}
+
+.visual-4 {
+    left: 0vw;
+    top: 10vh;
+    position: absolute;
+    display: block;
+}
+
+.visual-5 {
+    left: 20vw;
+    top: 30vh;
+    position: absolute;
+    display: block;
+
+}
+.visual-6 {
+    left: 40vw;
+    top: 60vh;
+    position: absolute;
+    display: block;
 }

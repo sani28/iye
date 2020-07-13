@@ -7,8 +7,16 @@
       <link rel="stylesheet" type="text/css" href="toc.css">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js"></script>
       <!-- <script type="text/javascript" src="js/main.js"></script> -->
+      <!-- animsition.css -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css">
+     <!-- jQuery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+     <!-- animsition.js -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
+
 
   </head><!-- end of head-->
+
 
  <body>
 
@@ -16,15 +24,44 @@
         <a href="index.html"> ← </a>
     </div>
 
+
+
     <div class="grid-container">
         <div class="bal"><a href="balance.html"><p>①</p> balance</a></div>
         <div class="infinite"></div>
         <div class="cntrl"></div>
         <div class="dstrt"></div>
       </div>
-  
+
 
 </body> <!-- END BODY -->
+
+
+<script>
+    $(document).ready(function() {
+    $(".animsition").animsition({
+      inClass: 'fade-in',
+      outClass: 'fade-out',
+      inDuration: 1500,
+      outDuration: 800,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body', //animsition wrapper element
+      loadingClass: 'animsition-loading',
+      loadingInner: '', // e.g '<img src="loading.svg" />'
+      timeout: false,
+      timeoutCountdown: 5000,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+      // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    });
+  });
+  </script>
 
 
 </html>
